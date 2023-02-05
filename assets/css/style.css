@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,600&display=swap');
+/* start */
+body{
+    font-family: 'work sans', sans-serif;
+}
+.text-indigo{
+    color: var(--bs-indigo);
+}
+/* end */ 
+/* start:sidebar */
+.sidebar{
+    width: 16rem;
+}
+
+/* end:sidebar */
+.btnc{
+background-color: #461a97;
+}
+.edit_li{
+    padding-left: 20px;
+    padding-bottom: 8px;
+    padding-block-start: 25px;
+    border-left: 2px solid var(--bs-indigo);
+}
+.edit_li:hover{
+    background-color:var(--bs-indigo) ;
+    transition: 0.5s ease-in-out;
+    color: beige;
+}
+.edit_form{
+    margin-left: 18rem;
+    margin-top: 5rem;
+}

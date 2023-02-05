@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title></title>
+	<style type="text/css">
+		*{
+  			margin: 0;
+  			padding: 0;
+  			box-sizing: border-box;
+ 		}
+	html{
+    	font-size: 10px;
+    	font-family: sans-serif;
+    	}
+    #header{
+    	min-height: 8vh;
+        width: 100%;
+        left: 0;
+        top: 0;
+        position: absolute; 
+      	background-color: #04AA6D;
+      	color: bisque;
+      	transition: .3s ease background-color;
+        }
+	#header:hover{
+		color: white;
+		background-color: white;
+		transition: .3s ease;
+		transition: 0.4s ease-out;
+	}
+	#header h1{
+		margin-top: 10px;
+		margin-left: 15px;
+		font-size: 35px;
+	}
+	#header h1 span{
+		color: cornsilk;
+	}
+	#header h2{
+		position: relative;
+		margin-top: -25px;
+		margin-left: 330px;
+		color: #04AA6D;
+		font-size: 40px;
+	}
+
+	.home{
+		width: 40px;
+		height: 50px;
+
+	}
+	.home1{
+		position: absolute;
+		width: 40px;
+		height: 50px;
+		left: 100px;
+		transition: .3s;
+
+	}
+	.home1 .dbtn{
+		margin-left: 10px;
+		margin-top: 40px;
+		background-color: #04AA6D;
+		color: white;
+		padding: 16px;
+		border: none;
+		
+}
+	.home .dbtn{
+		margin-left: 15px;
+		margin-top: 90px;
+		background-color: #04AA6D;
+		color: white;
+		padding: 16px;
+		border: none;
+		
+}
+
+.home .dbtn:hover {
+	border: 1px solid #04AA6D; 
+	background-color: #ffffff;
+	color: #04AA6D;
+
+}
+.home1 .dbtn:hover {
+	border: 1px solid #04AA6D; 
+	background-color: #ffffff;
+	color: #04AA6D;
+
+}
+
+	#oth{
+		position: relative;
+		top: 0px;
+		width: 1100px;
+		height: 200px;
+	}
+	.img{
+		margin-top: 110px;
+	}
+	.img p{
+		position: absolute;
+		top: 160px;
+		left: 210px;
+		color: #04AA6D;
+		font-size: 30px;
+		font-weight: bolder;
+	}
+	#body{
+		margin-top: 35px;
+	}
+	#body .first, .second{
+		display: flex;
+		margin-left: 70px;
+
+	}
+	.first p{
+		padding: 15px;
+		font-size: 17px;
+		color: #04AA6D;	
+	}
+	
+.first input, select , .second input{
+	border: none;
+	outline: none;
+	background: none;
+	color: #000;
+	font-size: 18px;
+	border-bottom: 1px solid #04AA6D;
+	margin-left: 15px;
+
+}
+.first textarea{
+	color: #000;
+	font-size: 18px;
+	border: 1px solid #04AA6D;
+	margin-left: 15px;
+
+}
+.second{
+	padding: 5px;
+}
+.second p{
+		padding-top: 5px;
+		padding-left: 15px;
+		font-size: 17px;
+		color: #04AA6D;	
+	}
+p .dbtn{
+		margin-left: 15px;
+		margin-top:10px;
+		background-color: #04AA6D;
+		color: white;
+		padding: 9px;
+		border: 1px solid #04AA6D ;
+		border: none;
+		
+}
+p .dbtn:focus{
+	color: #04AA6D;
+	background-color: #fff;
+	border: 1px solid #04AA6D ;
+	box-shadow: 8px 0px 0px 1px rgba(9, 153, 81);
+	animation: anim-shadow .3s forwards;
+
+}
+@keyframes anim-shadow{
+	100%{
+		box-shadow: 0px 0px 50px 28px rgba(9, 153, 81, 0);
+	}
+}
+
+#footer{
+margin-top: 30px;
+background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+#footer .container{
+min-height: 200px;
+flex-direction: column;
+}
+#footer .social-icon{
+display: flex;
+height: 150px;
+margin-bottom: 5px;
+}
+#footer .social-item{
+padding-top: 30px;
+height: 80px;
+width: 70px;
+margin: 0 10px;
+
+}
+#footer .social-item img{
+filter: grayscale(0);
+transition: .3 ease filter;
+}
+#footer h1{
+	padding-top: 10px;
+	padding-left: 10px;
+	color: bisque;
+}
+#footer h1 span{
+	color:cornsilk ;
+}
+#footer .social-item:hover img{
+filter: grayscale(1);
+}
+#footer p{
+color: white;
+font-size: 1rem;
+}
+.social-icon p{
+	color: white;
+	padding-left: 15px;
+	padding-top: 15px;
+}
+.social-item img{
+	width: 100%;
+	height: 100%;
+
+}
+label span{
+	color: white;
+	font-size: 15px;
+	padding:5px ;
+
+}
+#body .not{
+	background: #3ed19b;/*ffdb9b*/
+	padding: 20px 160px;
+	margin-left: 80px;
+	margin-top: 20px;
+	border-radius: 4px;
+	border-left: 8px solid #0d5339;
+}
+
+#body .not p{
+	color: #fff;
+	font-size: 25px;
+	text-align: left;
+	margin: 0px;
+}
+#notification{
+	height: 160px;
+	margin: 10px;
+	margin-left: 80px;
+	border: 2px solid #04AA6D;
+	border-radius: 10px;
+	transition: .3s;
+	
+}
+</style>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script> 
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'></link>
+<script type="text/javascript" >
+ 
+function pop() {
+
+  swal({  
+  title: "REQUEST SUBMITTED!",     
+  button: "Okey!",  
+});  
+}
+document.getElementById("re").addEventListener("reset",
+function(){
+	return confirm( "Do you want to reset the form? \n This will cause lose of data!!");
+}, false);	
+</script>
+</head>
+<body>
+<section id="header">
+<div class="container">
+
+<div class="brand">
+       <h1><span>HU</span>TRMS.</h1>
+       <h2>HU Transport Request Management System.</h2>
+       <hr align="center" width="1180px" >
+</div>
+</div>
+
+</section>
+
+<section id="oth">
+	
+	<div class="home">
+			<a href="Home.html"><button class="dbtn">Home</button></a>
+		</div>
+		<div class="home1" style="left: 100px">
+			<a href="#notification"><button class="dbtn">Replay_box</button></a>
+		</div>
+	
+	<div class="img">
+		<img src="IMG/rt.png" width="170px" height="40px"><p>Vehicle Service Request Form</p>
+	</div>
+</section>
+<section id="body">
+	<form>
+	<div class="first">
+		<p><label>For:<input type="text" id="txt" placeholder="collage" name="" required></label></p>
+		<p><label>Department:<input type="text" id="txt1" placeholder="department" name="" required required></label></p>
+		<p><label>Date:<script type="text/javascript">var now=new Date();document.write("  "+now) </script></label></p> 
+	</div>
+	<div class="first">
+		<p><label>Destination Place:<input type="text" placeholder="destination..." name="" ></label></p>
+		<p><label>Type of car:
+				<select name="pos" >
+						<option value="sel" selected>Type of car</option>
+						<option value="Stuff">rava4</option>
+						<option value="Vice">service bus</option>
+						<option value="Vice">pickup</option>
+					</select>
+		</label></p>
+	</div>
+	<div class="first">
+		<p>Reason:</p>
+		<p><label><textarea name="Reason" rows="4" cols="36" >
+		Enter Reason here.</textarea></label></p>
+	</div>
+
+	<div class="second">
+		<p><label>Vehicle Users name 1:<input type="text" name="" required></label></p><br>
+	</div>
+	<div class="second">
+		<p><label>2:<input type="text" name="" ></label></p>
+		<p><label>3:<input type="text" name="" ></label></p>
+	</div>
+	<div class="second">
+		<p><label>4:<input type="text" name="" ></label></p>
+		<p><label>5:<input type="text" name="" ></label></p>
+	</div>
+	<div class="second">
+		<p><label>6:<input type="text" name="" ></label></p>
+		<p><label>7:<input type="text" name="" ></label></p>
+	</div>
+	<div class="second">
+		<p><label>8:<input type="text" name="" ></label></p>
+	</div>
+	<div class="second">
+		<p><label>Start of trip:<input type="date" name="" ></label></p>
+		<p><label>hour:<input type="datetime" name="" ></label></p>
+		<p><label>Return day:<input type="date" name="" ></label></p>
+		<p><label>hour:<input type="datetime" name="" ></label></p>
+	</div>
+	<div class="second">
+		<p><label>!! we kindly ask Fule needed for trip:<input type="text" name="" required> liter benzine and </label></p></div>
+	<div class="second">
+		<p><label><input type="text" name="" required> liter nafta to be prepared for us.</label></p>
+	</div>
+	<div class="not">
+	<p><span><i class="fa fa-bookmark" style="font-size:36px; color:#0d5339;margin-right:10px;"></i></span>The cost will be coverd from the collage budget.</p>
+		
+	</div>
+
+			<p class="second" style="margin-left: 900px; margin-top: 25px;">
+				<button class="dbtn"  onclick="pop();">submit</button>
+				<input type="reset" class="dbtn"  id="re" value="Clear">
+
+			</p>
+	<p style="margin-left:80px; color:#04AA6D; font-weight: bolder; font-size: 15px;">REPLAY_BOX</p>
+	<div id="notification">
+	<p style="color:#04AA6D; margin: 10px;">Your Request Answer Will be Displayed here...</p>
+
+	</div>
+</section>
+</form>
+<section id="footer">
+<div class="container">
+
+<div class="brand"><h1><span>HU</span>TRMS.</h1></div>
+
+<div class="social-icon">
+	<p>CONTACT-US</p>
+<div class="social-item">
+<a href="www.Linkedin.com"><i class="fa fa-linkedin-square" style="font-size:48px;color:rgb(18, 114, 204)"></i></a><label><span>Linkedin</span></label>
+</div>
+<div class="social-item">
+<a href="www.Facebook.com"><i class="fa fa-facebook-official" style="font-size:48px;color:rgb(18, 114, 204)"></i></a><label><span>Facebook</span></label>
+</div>
+<div class="social-item">
+<a href="www.twitter.com"><i class="fa fa-twitter-square" style="font-size:48px;color:rgb(18, 114, 204)"></i></a><label><span>Twitter</span></label>
+</div>
+<div class="social-item">
+<a href="www.Gmail.com"><i class="fa fa-google" style="font-size:48px;color:rgb(18, 114, 204);"></i></a><label><span>Gmail</span></label>
+</div>
+</div>
+<div class="brand"><h1><em>BY HU SOFTWARE STUDENTS MAFIA's GROUP.</em></h1></div>
+
+<p align="center">Copyright &#169; 2022 HUTRMS. All right reserved.</p>
+</div>
+
+</section>
+
+</body>
+</html>
